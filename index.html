@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyInc - тестовое задание</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <img class="flag" src="./img/loyalty.svg" alt="Изображение флага">
+
+            <svg class="circle" width="280px" height="275px" viewbox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <circle id="circle" cx="5" cy="5" r="4" stroke-width="0.3" fill="transparent" stroke-linecap="round" />
+                </defs>
+
+                <use xlink:href="#circle" stroke="#ececec" stroke-dasharray="17.4 0 0 30" />
+                <use xlink:href="#circle" stroke="#70a84b" stroke-dasharray="10.9 0 0 20" />
+                <use xlink:href="#circle" stroke="#fcd329" stroke-dasharray="3.3,16.8,5.6" />
+            </svg>
+
+            <img class="line" src="./img/line.svg" alt="" srcset="">
+
+            <div class="text-in-circle">
+                <div class="text-in-circle__main-number">
+                    72<span class="main-number__dot">.7</span><span class="main-number__percent">%</span>
+                </div>
+    
+                <div class="text-in-circle__evaluation">
+                    <h1 class="heading">Лояльность</h1>
+                    <br>
+                    <div class="rating">ниже среднего</div>
+                    <div class="small">
+                        по отрасли: FMCG
+                        <br>
+                        значений слева от медианы
+                        <br>
+                        52.0% - 83.1%
+                    </div>
+                    <div class="changes">3.1</div>
+                </div>
+            </div>
+
+            <ul class="legend-list">
+                <li class="legend__item legend__promoters">
+                    <div class="legend__text">
+                        <h2 class="legend__heading">
+                            <span>Промоутеры</span>
+                            <span class="legend__percent">32.0%</span>
+                        </h2>
+    
+                        <div class="legend__counter">81</div>
+                    </div>
+
+                    <div class="percent-container">+1.2%</div>
+                    <div class="legend__progress-scale green"></div>
+                </li>
+
+                <li class="legend__item legend__skeptics">
+                    <div class="legend__text">
+                        <h2 class="legend__heading">
+                            <span>Скептики</span>
+                            <span class="legend__percent">39.1%</span>
+                        </h2>
+    
+                        <div class="legend__counter">8</div>
+                    </div>
+
+                    <div class="percent-container">+4.8%</div>
+                    <div class="legend__progress-scale yellow"></div>
+                </li>
+
+                <li class="legend__item legend__critics">
+                    <div class="legend__text">
+                        <h2 class="legend__heading">
+                            <span>Критики</span>
+                            <span class="legend__percent">79.8%</span>
+                        </h2>
+    
+                        <div class="legend__counter">7</div>
+                    </div>
+
+                    <div class="percent-container">-9.7%</div>
+                    <div class="legend__progress-scale red"></div>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
